@@ -50,7 +50,7 @@ export default function ImageSidebar({onDrop, images}) {
                 <input {...getInputProps()} />
                 <p>Upload some images</p>
             </div>
-            <div className="mt-2">
+            <div className="mt-2 overflow-y-scroll h-[700px]">
                 {images.length ? images.map((url, index) => (
                     <img
                         key={index}
